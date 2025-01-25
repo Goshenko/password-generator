@@ -12,8 +12,6 @@ A simple password-generator hosted locally on your machine.
 
 ## Installation
 
-Provide instructions on how to install and set up your project.
-
 ```bash
 # Clone the repository
 git clone https://github.com/Goshenko/password-generator.git
@@ -24,8 +22,6 @@ cd password-generator
 ```
 
 ## Usage
-
-Explain how to use your project. Include code examples if necessary.
 
 1. When prompted, enter your desired password length.
 2. When prompted, specify your desired character set.
@@ -51,5 +47,3 @@ Contributions are welcome! Please follow these steps to contribute:
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this template based on the specific needs of your project.
