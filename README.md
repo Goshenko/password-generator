@@ -1,6 +1,6 @@
-# Pylogger
+# Pygen
 
-A brief description of your project, highlighting its purpose and features.
+A simple password-generator hosted locally on your machine.
 
 ## Table of Contents
 
@@ -16,34 +16,25 @@ Provide instructions on how to install and set up your project.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Goshenko/password-generator.git
 
 # Navigate to the project directory
-cd your-repo-name
+cd password-generator
 
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ## Usage
 
 Explain how to use your project. Include code examples if necessary.
 
-```python
-# Example usage
-from project import main_function
-
-result = main_function(input_data)
-print(result)
-```
+1. When prompted, enter your desired password length.
+2. When prompted, specify your desired character set.
+3. Enjoy!
 
 ## Features
 
-List the key features of your project:
-
-- Feature 1
-- Feature 2
-- Feature 3
+- Ability to specify password length
+- Customization of password character sets
 
 ## Contributing
 
