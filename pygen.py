@@ -1,8 +1,25 @@
 import string
 import random
+import hashlib
+from argon2 import PasswordHasher
+
+ph = PasswordHasher()
+
+
+def password_hash_generator(generated_password):
+    hash = ph.hash(generated_password)
+    print(f"GENERATED HASH: {hash}")
+
+    print("==== ARGON2 VERIFICATION ====")
+    if (ph.verify(hash,generated_password)):
+        print("==== VERIFICATION SUCCESSFUL ====")
+    else:
+        print("==== VERIFICATION UNSUCCESSFUL ====")
+
 
 
 def program():
+    
     while True:
         try:
             password_length  = int(input("ENTER PASSWORD LENGTH: "))
@@ -57,7 +74,12 @@ def program():
         random_char = random.choice(character_set)
         password.append(random_char)
 
-    print("RESULT: " + "".join(password))
+    print("GENERATED PASSWORD: " + "".join(password))
+    password_hash_generator("".join(password))
+
+
+
+
 
 
 
